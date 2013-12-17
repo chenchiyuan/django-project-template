@@ -1,0 +1,14 @@
+Django>=1.6
+
+# Logging
+raven
+
+# Celery: Message queue
+celery
+django-celery
+
+# Admin
+django-debug-toolbar
+
+# Migrations
+South
