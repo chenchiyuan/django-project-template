@@ -1,0 +1,19 @@
+#!/bin/bash
+ 
+EXPECTED_ARGS=3
+E_BADARGS=65
+MYSQL=`which mysql`
+  
+Q1="create database if not exists $1;"
+Q2="grant usage on *.* to $3@localhost identified by '$2';"
+Q3="grant all privileges on $1.* to $3@localhost;"
+Q4="alter database $1 CHARACTER SET utf8 COLLATE utf8_general_ci;"
+SQL="${Q1}${Q2}${Q3}${Q4}"
+   
+if [ $# -ne $EXPECTED_ARGS ]
+then
+	echo "Usage: $0 dbname dbpass username"
+	exit $E_BADARGS
+fi
+	    
+$MYSQL -uroot -p -e "$SQL"

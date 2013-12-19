@@ -1,4 +1,7 @@
-# Django settings for movie project.
+# -*- coding: utf-8 -*-
+# __author__ = chenchiyuan
+
+from __future__ import division, unicode_literals, print_function
 import os
 import json
 from config import config
@@ -19,7 +22,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '{project_name}',                      # Or path to database file if using sqlite3.
+        'NAME': '{{ project_name }}',                      # Or path to database file if using sqlite3.
         'USER': 'shadow',                      # Not used with sqlite3.
         'PASSWORD': '900303',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -43,7 +46,7 @@ MEDIA_ROOT = ''
 
 MEDIA_URL = ''
 
-STATIC_ROOT = ''
+STATIC_ROOT = os.path.join(PROJECT_HOME, 'static')
 
 STATIC_URL = '/static/'
 
@@ -73,10 +76,17 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = '{{ project_name }}.urls'
 
-WSGI_APPLICATION = 'template.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_HOME, "templates"),
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.request",
+    "django.core.context_processors.i18n",
+    'django.contrib.messages.context_processors.messages',
 )
 
 INSTALLED_APPS = (
@@ -87,10 +97,15 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #third_parts
+    'debug_toolbar',
+    'grappelli.dashboard',
+    'grappelli',
+
+    #apps
     'django.contrib.admin',
     'django.contrib.admindocs',
 
-    'debug_toolbar',
     'south',
 )
 
@@ -119,3 +134,4 @@ LOGGING = {
 }
 
 INTERNAL_IPS = ['127.0.0.1']
+GRAPPELLI_INDEX_DASHBOARD = '{{ project_name }}.dashboard.CustomIndexDashboard'

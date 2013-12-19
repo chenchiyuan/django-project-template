@@ -9,6 +9,13 @@ django-celery
 
 # Admin
 django-debug-toolbar
+django-grappelli
 
 # Migrations
 South
+
+# DB
+MySQL-python
+
+# Extension
+ipython
