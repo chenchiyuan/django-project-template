@@ -1,0 +1,29 @@
+.zk-li {
+    margin: 5px 0 5px 0;
+}
+
+.zk-li a {
+    text-decoration-color: #000000;
+    color: #000000;
+}
+
+.zk-text h4{
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.zk-text p{
+    font-size: 14px;
+}
+
+.weixin {
+    margin: 10px 0 10px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0px 5px #666;
+    padding: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    list-style: none outside none;
+    overflow: hidden;
+}

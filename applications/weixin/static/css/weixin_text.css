@@ -1,0 +1,92 @@
+.zk-text-detail h1 {
+    color: #000;
+    font-size: 20px;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-family: Helvetica,STHeiti STXihei,Microsoft JhengHei,Microsoft YaHei,Tohoma,Arial
+}
+
+.zk-text-detail h2 {
+    color: #000;
+    font-size: 20px;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-family: Helvetica,STHeiti STXihei,Microsoft JhengHei,Microsoft YaHei,Tohoma,Arial
+}
+
+
+.zk-text-detail h3 {
+    font-size: 18px;
+}
+
+
+.zk-text-detail h4 {
+    font-size: 18px;
+}
+
+.zk-text-detail h5 {
+    font-size: 17px;
+}
+
+
+.zk-text-detail h6 {
+    font-size: 17px;
+}
+
+.zk-text-detail p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3e3e3e;
+    font-family: Helvetica,STHeiti STXihei,Microsoft JhengHei,Microsoft YaHei,Tohoma,Arial;
+}
+
+.zoneke-body {
+    background: #f8f7f5;
+    color: #222;
+    font-family: Helvetica,STHeiti STXihei,Microsoft JhengHei,Microsoft YaHei,Tohoma,Arial
+}
+
+.weixin {
+    margin: 10px 10px 10px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0px 5px #666;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    list-style: none outside none;
+    overflow: hidden;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3fbc48;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px 0;
+    height: 60px;
+}
+
+a:link{
+    text-decoration: none;
+    color: #428bca;
+
+}
+
+a:hover{
+    text-decoration: none;
+    color: #428bca;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.fixed-footer span {
+    display: block;
+    color: #428bca;
+    font-size: 1.2em;
+}

@@ -1,0 +1,26 @@
+{% extends "weixin_base.html" %}
+{% block link %}
+    <link href="/static/css/weixin_text.css" rel="stylesheet" media="screen">
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="container weixin">
+        <div class="row">
+            <div class="col-xs-12 zk-text-detail">
+                <h1>{{ rich_text.title }}</h1>
+                {% autoescape off %}
+                    {{ rich_text.html }}
+                {% endautoescape %}
+            </div>
+        </div>
+    </div>
+
+    {% autoescape off %}
+        {{ rich_text.footer_templates }}
+    {% endautoescape %}
+
+{% endblock %}
