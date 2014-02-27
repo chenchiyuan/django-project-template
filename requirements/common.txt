@@ -19,3 +19,7 @@ MySQL-python
 
 # Extension
 ipython
+requests
+bleach
+beautifulsoup4
+upyun

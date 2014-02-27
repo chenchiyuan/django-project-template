@@ -106,14 +106,12 @@ INSTALLED_APPS = (
     'grappelli.dashboard',
     'grappelli',
     # apps
-    'applications.certificate',
     'applications.ueditor',
     'applications.weixin',
     'applications.base',
 
     'django.contrib.admin',
     'django.contrib.admindocs',
-    'djcelery',
 
     'raven.contrib.django.raven_compat',
     'south',
