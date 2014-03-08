@@ -63,7 +63,7 @@ class App(SingletonModel):
         return json_data['access_token']
 
     def create_menus(self):
-        from apps.weixin.models.menus import MenuItem
+        from applications.weixin.models.menus import MenuItem
         token = self.get_access_token()
         post_dict = MenuItem.get_menus_by_app(self)
         headers = {'content-type': 'application/json'}
