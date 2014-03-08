@@ -2,8 +2,8 @@
 # __author__ = chenchiyuan
 
 from __future__ import division, unicode_literals, print_function
-from apps.weixin.weixin.conf import get_conf
-from apps.weixin.weixin.utils import get_class_by_path
+from applications.weixin.weixin.conf import get_conf
+from applications.weixin.weixin.utils import get_class_by_path
 
 
 class CacheMixin(object):

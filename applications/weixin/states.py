@@ -2,9 +2,9 @@
 # __author__ = chenchiyuan
 
 from __future__ import division, unicode_literals, print_function
-from apps.weixin.models import App
-from apps.weixin.response import MessageResponse, EventResponse
-from apps.weixin.weixin.interface import StateInterface
+from applications.weixin.models import App
+from applications.weixin.response import MessageResponse, EventResponse
+from applications.weixin.weixin.interface import StateInterface
 
 
 class NoCacheState(StateInterface):

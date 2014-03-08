@@ -4,7 +4,7 @@
 import hashlib
 import xml.etree.ElementTree as ET
 import time
-from apps.weixin.weixin.utils import merge_url
+from applications.weixin.weixin.utils import merge_url
 
 
 class WeiXin(object):

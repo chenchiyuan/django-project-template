@@ -3,7 +3,7 @@
 
 from __future__ import division, unicode_literals, print_function
 import logging
-from apps.weixin.weixin.core import WeiXin
+from applications.weixin.weixin.core import WeiXin
 
 logger = logging.getLogger(__name__)
 

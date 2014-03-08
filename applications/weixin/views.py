@@ -6,8 +6,8 @@ from django.http import HttpResponse, Http404
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import View, TemplateView
-from apps.weixin.models import RichText
-from apps.weixin.weixin.receiver import WeiXinReceiver
+from applications.weixin.models import RichText
+from applications.weixin.weixin.receiver import WeiXinReceiver
 
 
 class WeiXinResponseView(View):

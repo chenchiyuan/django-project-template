@@ -2,7 +2,7 @@
 # __author__ = chenchiyuan
 
 from __future__ import division, unicode_literals, print_function
-from apps.weixin.models import Rule, RichText
+from applications.weixin.models import Rule, RichText
 
 
 class QueryResponse(object):
