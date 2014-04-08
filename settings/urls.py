@@ -14,6 +14,7 @@ urlpatterns = patterns('',
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^editor/', include("applications.ueditor.urls")),
 )
 
 if settings.DEBUG:

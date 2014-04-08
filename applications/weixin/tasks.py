@@ -9,6 +9,8 @@ from urlparse import urlparse
 def replace_image(url, **kwargs):
     try:
         hosts = settings.IMG_AVAILABLE_HOSTS
+        if url.startswith("/media"):
+            url = settings.APP_HOST_NAME + url
         o = urlparse(url)
         host = o.netloc
 

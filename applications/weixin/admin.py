@@ -72,7 +72,7 @@ class RuleAdmin(admin.ModelAdmin):
 
     def count(self, obj):
         obj_count = obj.richtext_set.all().count()
-        return '<a href="/admin/easyway/richtext/?rules__id__exact=%s">%d</a>' % (obj.id, obj_count)
+        return '<a href="/admin/weixin/richtext/?rules__id__exact=%s">%d</a>' % (obj.id, obj_count)
 
     count.short_description = u"图文消息个数"
     count.allow_tags = True
